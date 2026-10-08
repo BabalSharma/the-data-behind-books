@@ -277,12 +277,6 @@ This project was prepared for educational purposes as an exploration of statisti
 
 Calculated from `data/books.csv`. Books need at least 10,000 ratings to qualify. Books are ranked by ratings count, highest first, to match the supplied Google Sheet. Average ratings are rounded to whole numbers. Ratings reflect this dataset, not necessarily current Goodreads ratings.
 
-### Cover image credits
 
-Cover links come from the dataset. Some covers may be unavailable. Images remain the property of their respective rights holders; reuse permissions may vary.
-
-### Author portraits
-
-Author portraits are not included until each image can be matched to a reliable source and appropriate attribution.
 
 <!-- TOP_BOOKS_END -->
