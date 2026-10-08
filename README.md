@@ -210,6 +210,14 @@ This project uses descriptive statistics to summarise a selected book dataset.
 - Rounded percentages may not add up to exactly 100%.
 - Descriptive statistics show patterns in the data but do not establish causation.
 - The prepared summary statistics should be verified against the underlying records before being used in further research.
+
+### Rating Count Consistency
+
+The five individual rating buckets (1-star through 5-star) were checked against
+`work_ratings_count` for all 10,000 book records. Every checked record matched,
+with zero mismatches. This confirms internal consistency between these fields
+in the supplied dataset, but does not independently verify the original source.
+
 ### Publication-Year Data Quality
 
 The dataset contains 10,000 book records. During validation, 52 records were found to have missing or invalid original publication years: 46 empty values and 6 `#REF!` spreadsheet errors. These records are excluded from analyses that require a valid publication year. The original CSV is preserved unchanged. Publication dates for ancient texts require particular care because the date of composition may differ from the publication date of a specific edition.
