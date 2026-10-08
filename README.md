@@ -256,26 +256,26 @@ This project was prepared for educational purposes as an exploration of statisti
 *The Data Behind Books — exploring stories through data.*
 
 <!-- TOP_BOOKS_START -->
-## Top 10 Books by Average Rating
+## Top 10 Most-Rated Books
 
-*Eligibility: at least 10,000 ratings. No named author appears more than once; ranked by average rating, then rating count, then title.
+*Ranked by ratings count, matching the Google Sheet. Average ratings are displayed rounded to whole numbers.
 
 | Rank | Cover | Book | Author | Average rating | Ratings |
 |---:|---|---|---|---:|---:|
-| 1 | <img src="https://images.gr-assets.com/books/1473064526m/24812.jpg" alt="Cover of The Complete Calvin and Hobbes" width="65"> | [The Complete Calvin and Hobbes](https://www.goodreads.com/book/show/24812) | Bill Watterson | 4.82/5 | 28,900 |
-| 2 | <img src="https://images.gr-assets.com/books/1391535251m/17332218.jpg" alt="Cover of Words of Radiance (The Stormlight Archive, #2)" width="65"> | [Words of Radiance (The Stormlight Archive, #2)](https://www.goodreads.com/book/show/17332218) | Brandon Sanderson | 4.77/5 | 73,572 |
-| 3 | Cover unavailable | [Harry Potter Boxed Set, Books 1-5 (Harry Potter, #1-5)](https://www.goodreads.com/book/show/8) | J.K. Rowling, Mary GrandPré | 4.77/5 | 33,220 |
-| 4 | <img src="https://images.gr-assets.com/books/1485259138m/17927395.jpg" alt="Cover of A Court of Mist and Fury (A Court of Thorns and Roses, #2)" width="65"> | [A Court of Mist and Fury (A Court of Thorns and Roses, #2)](https://www.goodreads.com/book/show/17927395) | Sarah J. Maas | 4.72/5 | 108,384 |
-| 5 | <img src="https://images.gr-assets.com/books/1376738412m/18337259.jpg" alt="Cover of A Game of Thrones: Comic Book, Issue 1" width="65"> | [A Game of Thrones: Comic Book, Issue 1](https://www.goodreads.com/book/show/18337259) | Daniel Abraham, George R.R. Martin, Tommy Patterson | 4.65/5 | 18,667 |
-| 6 | <img src="https://images.gr-assets.com/books/1312226853m/23753.jpg" alt="Cover of The Absolute Sandman, Volume One" width="65"> | [The Absolute Sandman, Volume One](https://www.goodreads.com/book/show/23753) | Neil Gaiman, Mike Dringenberg, Chris Bachalo, Michael Zulli, Kelly Jones, Charles Vess, Colleen Doran, Malcolm Jones III, Steve Parkhouse, Daniel Vozzo, Lee Loughridge, Steve Oliff, Todd Klein, Dave McKean, Sam Kieth | 4.65/5 | 13,401 |
-| 7 | Cover unavailable | [Jesus the Christ](https://www.goodreads.com/book/show/481749) | James E. Talmage | 4.63/5 | 17,179 |
-| 8 | <img src="https://images.gr-assets.com/books/1456172607m/22299763.jpg" alt="Cover of Crooked Kingdom (Six of Crows, #2)" width="65"> | [Crooked Kingdom (Six of Crows, #2)](https://www.goodreads.com/book/show/22299763) | Leigh Bardugo | 4.62/5 | 44,289 |
-| 9 | <img src="https://images.gr-assets.com/books/1476284759m/32075671.jpg" alt="Cover of The Hate U Give" width="65"> | [The Hate U Give](https://www.goodreads.com/book/show/32075671) | Angie Thomas | 4.62/5 | 32,610 |
-| 10 | Cover unavailable | [Vampire Academy Collection (Vampire Academy, #1-3)](https://www.goodreads.com/book/show/6339989) | Richelle Mead | 4.61/5 | 30,166 |
+| 1 | <img src="https://images.gr-assets.com/books/1447303603m/2767052.jpg" alt="Cover of The Hunger Games (The Hunger Games, #1)" width="65"> | [The Hunger Games (The Hunger Games, #1)](https://www.goodreads.com/book/show/2767052) | Suzanne Collins | 4 | 4,780,653 |
+| 2 | <img src="https://images.gr-assets.com/books/1474154022m/3.jpg" alt="Cover of Harry Potter and the Sorcerer&#x27;s Stone (Harry Potter, #1)" width="65"> | [Harry Potter and the Sorcerer's Stone (Harry Potter, #1)](https://www.goodreads.com/book/show/3) | J.K. Rowling, Mary GrandPré | 4 | 4,602,479 |
+| 3 | <img src="https://images.gr-assets.com/books/1361039443m/41865.jpg" alt="Cover of Twilight (Twilight, #1)" width="65"> | [Twilight (Twilight, #1)](https://www.goodreads.com/book/show/41865) | Stephenie Meyer | 4 | 3,866,839 |
+| 4 | <img src="https://images.gr-assets.com/books/1361975680m/2657.jpg" alt="Cover of To Kill a Mockingbird" width="65"> | [To Kill a Mockingbird](https://www.goodreads.com/book/show/2657) | Harper Lee | 4 | 3,198,671 |
+| 5 | <img src="https://images.gr-assets.com/books/1490528560m/4671.jpg" alt="Cover of The Great Gatsby" width="65"> | [The Great Gatsby](https://www.goodreads.com/book/show/4671) | F. Scott Fitzgerald | 4 | 2,683,664 |
+| 6 | <img src="https://images.gr-assets.com/books/1360206420m/11870085.jpg" alt="Cover of The Fault in Our Stars" width="65"> | [The Fault in Our Stars](https://www.goodreads.com/book/show/11870085) | John Green | 4 | 2,346,404 |
+| 7 | <img src="https://images.gr-assets.com/books/1372847500m/5907.jpg" alt="Cover of The Hobbit" width="65"> | [The Hobbit](https://www.goodreads.com/book/show/5907) | J.R.R. Tolkien | 4 | 2,071,616 |
+| 8 | <img src="https://images.gr-assets.com/books/1398034300m/5107.jpg" alt="Cover of The Catcher in the Rye" width="65"> | [The Catcher in the Rye](https://www.goodreads.com/book/show/5107) | J.D. Salinger | 4 | 2,044,241 |
+| 9 | <img src="https://images.gr-assets.com/books/1320399351m/1885.jpg" alt="Cover of Pride and Prejudice" width="65"> | [Pride and Prejudice](https://www.goodreads.com/book/show/1885) | Jane Austen | 4 | 2,035,490 |
+| 10 | <img src="https://images.gr-assets.com/books/1303390735m/960.jpg" alt="Cover of Angels &amp; Demons  (Robert Langdon, #1)" width="65"> | [Angels & Demons  (Robert Langdon, #1)](https://www.goodreads.com/book/show/960) | Dan Brown | 4 | 2,001,311 |
 
 ### Method
 
-Calculated from `data/books.csv`. Books need at least 10,000 ratings to qualify. The ranking uses average rating, then ratings count, then title. No named author appears more than once. Entries listing Anonymous are excluded. Ratings reflect this dataset, not necessarily current Goodreads ratings.
+Calculated from `data/books.csv`. Books need at least 10,000 ratings to qualify. Books are ranked by ratings count, highest first, to match the supplied Google Sheet. Average ratings are rounded to whole numbers. Ratings reflect this dataset, not necessarily current Goodreads ratings.
 
 ### Cover image credits
 

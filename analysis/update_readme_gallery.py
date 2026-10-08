@@ -22,40 +22,19 @@ def main():
         row["_rating"] = rating
         row["_count"] = count
         eligible.append(row)
-    # Keep the highest-ranked eligible book for each author.
+    # Match the Google Sheet: rank by number of ratings, highest first.
     eligible.sort(
         key=lambda r: (
-            -r["_rating"],
             -r["_count"],
             r["title"].casefold(),
         )
     )
-    top = []
-    seen_authors = set()
-    for row in eligible:
-        authors = row.get("authors", "").strip()
-        # Do not combine or split co-author names: treat the full author
-        # field as one group to avoid making unsupported assumptions.
-        names = [
-            name.strip().casefold()
-            for name in authors.split(",")
-            if name.strip() and name.strip().casefold() != "anonymous"
-        ]
-        # Skip entries with anonymous authors or no identifiable author.
-        if not names or "anonymous" in authors.casefold():
-            continue
-        # Skip a book if any named author has already appeared.
-        if any(name in seen_authors for name in names):
-            continue
-        seen_authors.update(names)
-        top.append(row)
-        if len(top) == 10:
-            break
+    top = eligible[:10]
     lines = [
         START,
-        "## Top 10 Books by Average Rating",
+        "## Top 10 Most-Rated Books",
         "",
-        "*Eligibility: at least 10,000 ratings. No named author appears more than once; ranked by average rating, then rating count, then title.",
+        "*Ranked by ratings count, matching the Google Sheet. Average ratings are displayed rounded to whole numbers.",
         "",
         "| Rank | Cover | Book | Author | Average rating | Ratings |",
         "|---:|---|---|---|---:|---:|",
@@ -87,7 +66,7 @@ def main():
         )
         lines.append(
             f"| {rank} | {cover_cell} | {book_cell} | {safe_author} "
-            f"| {row['_rating']:.2f}/5 | {row['_count']:,} |"
+            f"| {row['_rating']:.0f} | {row['_count']:,} |"
         )
     lines.extend([
         "",
@@ -95,9 +74,10 @@ def main():
         "",
         (
             "Calculated from `data/books.csv`. Books need at least 10,000 "
-            "ratings to qualify. The ranking uses average rating, then "
-            "ratings count, then title. No named author appears more than once. "
-            "Entries listing Anonymous are excluded. Ratings reflect this dataset, not necessarily current Goodreads ratings."
+            "ratings to qualify. Books are ranked by ratings count, highest "
+            "first, to match the supplied Google Sheet. Average ratings are "
+            "rounded to whole numbers. Ratings reflect this dataset, not "
+            "necessarily current Goodreads ratings."
         ),
         "",
         "### Cover image credits",
@@ -128,7 +108,7 @@ def main():
     README_FILE.write_text(updated, encoding="utf-8")
     print(f"Updated: {README_FILE}")
     print(f"Eligible books: {len(eligible):,}")
-    print(f"Unique named authors represented: {len(seen_authors):,}")
+    print("Ranking: ratings count, highest first.")
     print(f"Gallery entries: {len(top)}")
     print(f"Minimum ratings: {MIN_RATINGS:,}")
     print("Placeholder cover images excluded.")
