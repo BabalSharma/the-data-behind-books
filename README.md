@@ -191,9 +191,15 @@ This chart shows the ten author names appearing most often in the dataset. Count
 ![Books by publication decade](charts/publication_decades.png)
 
 This chart groups valid publication years into decades. Records with missing or invalid years are excluded.
+### Book Popularity vs Average Rating
+
+![Book Popularity vs Average Rating](charts/rating_count_relationship.png)
+
+This scatter plot compares the number of ratings a book received with its average rating. The horizontal axis uses a logarithmic scale because books have very different numbers of ratings.
+
+Across the 10,000 books analysed, the Pearson correlation between ratings count and average rating is **0.0450**, indicating a very weak positive linear relationship. This does not establish that popularity causes higher ratings, and it should not be interpreted as evidence of a meaningful predictive relationship.
 
 ---
-
 ## Methodology and Limitations
 
 This project uses descriptive statistics to summarise a selected book dataset.
@@ -204,6 +210,9 @@ This project uses descriptive statistics to summarise a selected book dataset.
 - Rounded percentages may not add up to exactly 100%.
 - Descriptive statistics show patterns in the data but do not establish causation.
 - The prepared summary statistics should be verified against the underlying records before being used in further research.
+### Publication-Year Data Quality
+
+The dataset contains 10,000 book records. During validation, 52 records were found to have missing or invalid original publication years: 46 empty values and 6 `#REF!` spreadsheet errors. These records are excluded from analyses that require a valid publication year. The original CSV is preserved unchanged. Publication dates for ancient texts require particular care because the date of composition may differ from the publication date of a specific edition.
 
 ## Data Source and Credits
 
