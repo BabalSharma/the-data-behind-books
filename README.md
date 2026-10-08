@@ -52,7 +52,7 @@ The prepared analysis contains the following summary statistics:
 | First quartile (Q1) | 3.85 |
 | Third quartile (Q3) | 4.18 |
 | Interquartile range (IQR) | 0.33 |
-| Standard deviation | 0.2546 |
+| Standard deviation | 0.2544 |
 
 The interquartile range is the difference between the third and first quartiles:
 
@@ -85,12 +85,12 @@ The prepared rating summary reports:
 
 | Rating | Share | Number of ratings |
 |---|---:|---:|
-| 1 star | 2% | 13,406,072 |
+| 1 star | 2% | 13,450,406 |
 | 2 stars | 5% | 30,997,156 |
 | 3 stars | 19% | 114,758,938 |
 | 4 stars | 33% | 199,656,966 |
 | 5 stars | 40% | 237,898,056 |
-| **Total** | **99%*** | **596,717,188** |
+| **Total** | **99%*** | **596,873,216** |
 
 \*The displayed percentages total 99% because of rounding in the prepared summary.
 
@@ -151,20 +151,48 @@ cd the-data-behind-books
 
 Replace `YOUR-USERNAME` with the correct GitHub username.
 
-## Reproducing the Analysis
+## Reproducing the Charts
 
-1. Download or clone the repository.
-2. Inspect the CSV column names and data types.
-3. Check for missing values, duplicate records, and inconsistent entries.
-4. Run the chart script from the project directory:
+Requirements: Python 3 and pip.
+
+From the repository directory, run:
 
 ```bash
-python3 analysis/chart.py
+python3 -m venv .venv
+source .venv/bin/activate
+python -m pip install matplotlib pandas
+python analysis/chart.py
 ```
 
-The script may require additional Python packages depending on its implementation. Check the imports in `analysis/chart.py` and install the necessary packages before running it.
+The script reads `data/books.csv` and generates three PNG files in `charts/`:
 
-Generated charts should be saved in the `charts/` directory. Verify the output paths in the script before running it.
+- `rating_distribution.png`
+- `top_authors.png`
+- `publication_decades.png`
+
+## Visualisations
+
+The charts below are generated from `data/books.csv` using the Python script `analysis/chart.py`.
+
+### 1. Distribution of Average Book Ratings
+
+![Distribution of average book ratings](charts/rating_distribution.png)
+
+This histogram shows how the dataset's book-level average ratings are distributed.
+
+### 2. Authors Appearing Most Often
+
+![Top 10 authors by book records](charts/top_authors.png)
+
+This chart shows the ten author names appearing most often in the dataset. Counts reflect records in this dataset, not each author's complete bibliography.
+
+### 3. Books by Publication Decade
+
+![Books by publication decade](charts/publication_decades.png)
+
+This chart groups valid publication years into decades. Records with missing or invalid years are excluded.
+
+---
 
 ## Methodology and Limitations
 
