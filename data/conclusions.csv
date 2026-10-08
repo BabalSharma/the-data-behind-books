@@ -1,0 +1,7 @@
+Conclusion
+
+"This project analysed a dataset of 10,000 books to explore their ratings, popular authors, and publication years. The statistical analysis showed an average book rating of approximately 4.00, with a median rating of 4.02. This suggests that the books in the dataset generally received positive ratings."
+
+The rating distribution showed that 4-star and 5-star ratings accounted for the largest shares of individual ratings. The author analysis identified James Patterson and Stephen King as the authors associated with the highest numbers of books in our dataset. The publication-year chart also showed that the dataset contains many more books from recent decades than from earlier periods.
+
+"Overall, this project demonstrates how statistics, spreadsheets, and charts can transform raw data into meaningful insights. However, these findings describe only the dataset analysed and should not be treated as a complete representation of all books or readers."
