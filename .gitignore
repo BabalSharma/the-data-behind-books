@@ -1,0 +1,45 @@
+# Secrets and credentials
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+credentials.json
+secrets.json
+
+# Personal and local files
+.DS_Store
+Thumbs.db
+*.log
+*.bak
+*.tmp
+*~
+*.swp
+*.swo
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Local databases
+*.db
+*.sqlite
+*.sqlite3
+
+# Editors and local configuration
+.vscode/
+.idea/
+
+# Google Takeout and archives
+Google Takeout/
+takeout-*.zip
+*.zip
+*.tar
+*.tar.gz
+
+# Spreadsheet originals and unrelated exports
+*.xlsx
+*.xls
+*.ods
