@@ -254,3 +254,35 @@ This project was prepared for educational purposes as an exploration of statisti
 ---
 
 *The Data Behind Books — exploring stories through data.*
+
+<!-- TOP_BOOKS_START -->
+## Top 10 Books by Average Rating
+
+*Eligibility: at least 10,000 ratings. No named author appears more than once; ranked by average rating, then rating count, then title.
+
+| Rank | Cover | Book | Author | Average rating | Ratings |
+|---:|---|---|---|---:|---:|
+| 1 | <img src="https://images.gr-assets.com/books/1473064526m/24812.jpg" alt="Cover of The Complete Calvin and Hobbes" width="65"> | [The Complete Calvin and Hobbes](https://www.goodreads.com/book/show/24812) | Bill Watterson | 4.82/5 | 28,900 |
+| 2 | <img src="https://images.gr-assets.com/books/1391535251m/17332218.jpg" alt="Cover of Words of Radiance (The Stormlight Archive, #2)" width="65"> | [Words of Radiance (The Stormlight Archive, #2)](https://www.goodreads.com/book/show/17332218) | Brandon Sanderson | 4.77/5 | 73,572 |
+| 3 | Cover unavailable | [Harry Potter Boxed Set, Books 1-5 (Harry Potter, #1-5)](https://www.goodreads.com/book/show/8) | J.K. Rowling, Mary GrandPré | 4.77/5 | 33,220 |
+| 4 | <img src="https://images.gr-assets.com/books/1485259138m/17927395.jpg" alt="Cover of A Court of Mist and Fury (A Court of Thorns and Roses, #2)" width="65"> | [A Court of Mist and Fury (A Court of Thorns and Roses, #2)](https://www.goodreads.com/book/show/17927395) | Sarah J. Maas | 4.72/5 | 108,384 |
+| 5 | <img src="https://images.gr-assets.com/books/1376738412m/18337259.jpg" alt="Cover of A Game of Thrones: Comic Book, Issue 1" width="65"> | [A Game of Thrones: Comic Book, Issue 1](https://www.goodreads.com/book/show/18337259) | Daniel Abraham, George R.R. Martin, Tommy Patterson | 4.65/5 | 18,667 |
+| 6 | <img src="https://images.gr-assets.com/books/1312226853m/23753.jpg" alt="Cover of The Absolute Sandman, Volume One" width="65"> | [The Absolute Sandman, Volume One](https://www.goodreads.com/book/show/23753) | Neil Gaiman, Mike Dringenberg, Chris Bachalo, Michael Zulli, Kelly Jones, Charles Vess, Colleen Doran, Malcolm Jones III, Steve Parkhouse, Daniel Vozzo, Lee Loughridge, Steve Oliff, Todd Klein, Dave McKean, Sam Kieth | 4.65/5 | 13,401 |
+| 7 | Cover unavailable | [Jesus the Christ](https://www.goodreads.com/book/show/481749) | James E. Talmage | 4.63/5 | 17,179 |
+| 8 | <img src="https://images.gr-assets.com/books/1456172607m/22299763.jpg" alt="Cover of Crooked Kingdom (Six of Crows, #2)" width="65"> | [Crooked Kingdom (Six of Crows, #2)](https://www.goodreads.com/book/show/22299763) | Leigh Bardugo | 4.62/5 | 44,289 |
+| 9 | <img src="https://images.gr-assets.com/books/1476284759m/32075671.jpg" alt="Cover of The Hate U Give" width="65"> | [The Hate U Give](https://www.goodreads.com/book/show/32075671) | Angie Thomas | 4.62/5 | 32,610 |
+| 10 | Cover unavailable | [Vampire Academy Collection (Vampire Academy, #1-3)](https://www.goodreads.com/book/show/6339989) | Richelle Mead | 4.61/5 | 30,166 |
+
+### Method
+
+Calculated from `data/books.csv`. Books need at least 10,000 ratings to qualify. The ranking uses average rating, then ratings count, then title. No named author appears more than once. Entries listing Anonymous are excluded. Ratings reflect this dataset, not necessarily current Goodreads ratings.
+
+### Cover image credits
+
+Cover links come from the dataset. Some covers may be unavailable. Images remain the property of their respective rights holders; reuse permissions may vary.
+
+### Author portraits
+
+Author portraits are not included until each image can be matched to a reliable source and appropriate attribution.
+
+<!-- TOP_BOOKS_END -->
